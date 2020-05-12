@@ -1,0 +1,66 @@
+{
+   "status_code":20,
+   "lang":"rust",
+   "run_success":false,
+   "compile_error":"Line 9, Char 20: cannot find function `find_median_sorted_arrays` in this scope (solution.rs)",
+   "full_compile_error":"Line 9, Char 20: cannot find function `find_median_sorted_arrays` in this scope (solution.rs)
+   |
+9 |             return find_median_sorted_arrays(&b, &a);
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+Line 21, Char 57: no associated item named `MIN` found for type `i32` in the current scope (solution.rs)
+   |
+21 |             let max_left_x = if partition_x == 0 { i32::MIN } else { a[partition_x - 1] };
+   |                                                         ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+21 |             let max_left_x = if partition_x == 0 { std::i32::MIN } else { a[partition_x - 1] };
+   |                                                    ^^^^^^^^^^^^^
+Line 22, Char 58: no associated item named `MAX` found for type `i32` in the current scope (solution.rs)
+   |
+22 |             let min_right_x = if partition_x == x { i32::MAX } else { a[partition_x] };
+   |                                                          ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+22 |             let min_right_x = if partition_x == x { std::i32::MAX } else { a[partition_x] };
+   |                                                     ^^^^^^^^^^^^^
+Line 24, Char 57: no associated item named `MIN` found for type `i32` in the current scope (solution.rs)
+   |
+24 |             let max_left_y = if partition_y == 0 { i32::MIN } else { b[partition_y - 1] };
+   |                                                         ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+24 |             let max_left_y = if partition_y == 0 { std::i32::MIN } else { b[partition_y - 1] };
+   |                                                    ^^^^^^^^^^^^^
+Line 25, Char 58: no associated item named `MAX` found for type `i32` in the current scope (solution.rs)
+   |
+25 |             let min_right_y = if partition_y == y { i32::MAX } else { b[partition_y] };
+   |                                                          ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+25 |             let min_right_y = if partition_y == y { std::i32::MAX } else { b[partition_y] };
+   |                                                     ^^^^^^^^^^^^^
+error: aborting due to 5 previous errors",
+   "status_runtime":"N/A",
+   "memory":0,
+   "code_answer":[
+
+   ],
+   "code_output":[
+
+   ],
+   "task_finish_time":1589164756177,
+   "elapsed_time":0,
+   "total_correct":null,
+   "total_testcases":null,
+   "runtime_percentile":null,
+   "status_memory":"N/A",
+   "memory_percentile":null,
+   "pretty_lang":"Rust",
+   "submission_id":"runcode_1589164753.5199473_feDjthsS1S",
+   "status_msg":"Compile Error",
+   "state":"SUCCESS"
+}

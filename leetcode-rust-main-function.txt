@@ -1,0 +1,112 @@
+{
+   "status_code":20,
+   "lang":"rust",
+   "run_success":false,
+   "compile_error":"Line 7, Char 20: cannot find function `find_median_sorted_arrays` in this scope (solution.rs)",
+   "full_compile_error":"Line 7, Char 20: cannot find function `find_median_sorted_arrays` in this scope (solution.rs)
+  |
+7 |             return find_median_sorted_arrays(&b, &a);
+  |                    ^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+Line 27, Char 29: cannot find function `max` in this scope (solution.rs)
+   |
+27 |                     return (max(max_left_x, max_left_y) + min(min_right_x, min_right_y)) as f64 / 2.0;
+   |                             ^^^ not found in this scope
+   |
+help: possible candidates are found in other modules, you can import them into scope
+   |
+45 | use core::cmp::max;
+   |
+45 | use std::cmp::max;
+   |
+Line 27, Char 59: cannot find function `min` in this scope (solution.rs)
+   |
+27 |                       return (max(max_left_x, max_left_y) + min(min_right_x, min_right_y)) as f64 / 2.0;
+   |                                                             ^^^
+...
+63 | / fn main() {
+64 | |     let SEPARATOR = \"\\u{001b}\\u{0009}\\u{001d}\";
+65 | |     let reader = io::stdin();
+66 | |     let mut io_iter = reader.lock().lines();
+...  |
+82 | |     }
+83 | | }
+   | |_- similarly named function `main` defined here
+   |
+help: a function with a similar name exists
+   |
+27 |                     return (max(max_left_x, max_left_y) + main(min_right_x, min_right_y)) as f64 / 2.0;
+   |                                                           ^^^^
+help: possible candidates are found in other modules, you can import them into scope
+   |
+45 | use core::cmp::min;
+   |
+45 | use std::cmp::min;
+   |
+Line 29, Char 29: cannot find function `max` in this scope (solution.rs)
+   |
+29 |                     return  max(max_left_x, max_left_y) as f64;
+   |                             ^^^ not found in this scope
+   |
+help: possible candidates are found in other modules, you can import them into scope
+   |
+45 | use core::cmp::max;
+   |
+45 | use std::cmp::max;
+   |
+Line 19, Char 57: no associated item named `MIN` found for type `i32` in the current scope (solution.rs)
+   |
+19 |             let max_left_x = if partition_x == 0 { i32::MIN } else { a[partition_x - 1] };
+   |                                                         ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+19 |             let max_left_x = if partition_x == 0 { std::i32::MIN } else { a[partition_x - 1] };
+   |                                                    ^^^^^^^^^^^^^
+Line 20, Char 58: no associated item named `MAX` found for type `i32` in the current scope (solution.rs)
+   |
+20 |             let min_right_x = if partition_x == x { i32::MAX } else { a[partition_x] };
+   |                                                          ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+20 |             let min_right_x = if partition_x == x { std::i32::MAX } else { a[partition_x] };
+   |                                                     ^^^^^^^^^^^^^
+Line 22, Char 57: no associated item named `MIN` found for type `i32` in the current scope (solution.rs)
+   |
+22 |             let max_left_y = if partition_y == 0 { i32::MIN } else { b[partition_y - 1] };
+   |                                                         ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+22 |             let max_left_y = if partition_y == 0 { std::i32::MIN } else { b[partition_y - 1] };
+   |                                                    ^^^^^^^^^^^^^
+Line 23, Char 58: no associated item named `MAX` found for type `i32` in the current scope (solution.rs)
+   |
+23 |             let min_right_y = if partition_y == y { i32::MAX } else { b[partition_y] };
+   |                                                          ^^^ associated item not found in `i32`
+   |
+help: you are looking for the module in `std`, not the primitive type
+   |
+23 |             let min_right_y = if partition_y == y { std::i32::MAX } else { b[partition_y] };
+   |                                                     ^^^^^^^^^^^^^
+error: aborting due to 8 previous errors",
+   "status_runtime":"N/A",
+   "memory":0,
+   "code_answer":[
+
+   ],
+   "code_output":[
+
+   ],
+   "task_finish_time":1589165177628,
+   "elapsed_time":0,
+   "total_correct":null,
+   "total_testcases":null,
+   "runtime_percentile":null,
+   "status_memory":"N/A",
+   "memory_percentile":null,
+   "pretty_lang":"Rust",
+   "submission_id":"runcode_1589165174.9463468_FibqBAmLMn",
+   "status_msg":"Compile Error",
+   "state":"SUCCESS"
+}
